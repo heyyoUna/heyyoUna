@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <select name="" id="genderSelect">
+                性別
+            </select>
+            <option value=""></option>
+        </div>
+    </body>
+    <script>
+        const genderSelect = document.getElementById("genderSelect");
+        const arrayA = [
+            { id: 1, personality: "shy", name: "Amy" },
+            { id: 2, personality: "thoughtful", name: "Ben" },
+            { id: 3, personality: "kind", name: "Cindy" },
+            { id: 4, personality: "kind", name: "Eason" },
+            { id: 5, personality: "funny", name: "Fanny" },
+        ];
+
+        arrayA.forEach((item) => {
+            const arrayC = [item.personality];
+            console.log("arrayC:", arrayC);
+        });
+    </script>
+</html>
